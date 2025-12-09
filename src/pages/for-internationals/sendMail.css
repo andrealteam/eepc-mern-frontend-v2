@@ -1,0 +1,79 @@
+.send-mail-container {
+  padding: 20px;
+  max-width: 600px;
+  margin: auto;
+  background: #f9fafb;
+  border-radius: 20px;
+  box-shadow: rgba(100, 100, 111, 0.4) 0px 7px 29px 0px;
+}
+
+.send-mail-container h2 {
+  text-align: center;
+  font-weight: 600;
+  color: #191919;
+  margin-bottom: 25px;
+}
+
+.email-form {
+  margin-top: 20px;
+}
+
+.email-form p {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.email-form label {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.email-form input,
+.email-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+}
+
+.email-form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #1a83c6;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.email-form button:hover {
+  background-color: #1671a9;
+  color: #fff;
+}
+
+.email-form button:disabled {
+  background-color: #e5e7eb;
+  cursor: not-allowed;
+}
+
+.email-form p {
+  color: red;
+  font-size: 12px;
+}
+
+.email-form .button-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  gap: 15px;
+}
+.email-form .button-container .btn-discard {
+  background-color: #051c3f8e;
+}
+.email-form .button-container .btn-discard:hover {
+  background-color: #051c3fce;
+}

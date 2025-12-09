@@ -1,0 +1,121 @@
+/* Table.css */
+
+/* Container for the table header (title and search) */
+.table-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Table title styling */
+.table-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #363636;
+  margin: 0;
+}
+
+/* Search bar styling */
+.search-container {
+  text-align: right;
+}
+
+.search-input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  width: 250px;
+  transition: all 0.3s;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #1082d7;
+}
+
+/* Table container */
+.table-container {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  overflow-x: auto;
+  max-width: 100%; /* Ensure the container doesn't overflow */
+}
+
+/* Link styling inside the table */
+.link {
+  text-decoration: none;
+  color: #1082d7;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.link:hover {
+  text-decoration: underline;
+  color: rgb(11, 76, 145);
+}
+
+/* Panel name text wrap */
+.panel-name {
+  word-wrap: break-word;
+  white-space: normal;
+}
+
+/* Adjustments for responsiveness */
+@media (max-width: 768px) {
+  .search-input {
+    width: 200px;
+  }
+
+  .react-data-table .rdt_TableHead,
+  .react-data-table .rdt_TableCell {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .react-data-table .rdt_Pagination {
+    padding: 10px 15px;
+  }
+}
+
+.myModal h5 {
+  font-size: 30px;
+  color: #1a83c6;
+  font-weight: 600;
+}
+
+.modalTender {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.modal-dialog {
+  max-width: 70%;
+  max-height: 70%;
+  margin: auto;
+}
+.modal-content {
+  height: 100%;
+}
+
+/* .hmVlQg div:first-child {
+  white-space: normal !important;
+  /* overflow: visible !important; 
+  /* text-overflow: clip !important; 
+}  */
+.supplier-container .cyOdnA {
+  white-space: normal !important;
+  /* overflow: visible !important; */
+  /* text-overflow: clip !important; */
+}
+/* .hmVlQg div:first-child,
+.cyOdnA {
+  white-space: normal !important;
+  /* overflow: visible !important; 
+  /* text-overflow: clip !important; 
+} */

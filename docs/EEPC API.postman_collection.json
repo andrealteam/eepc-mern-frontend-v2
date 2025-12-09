@@ -1,0 +1,7753 @@
+{
+	"info": {
+		"_postman_id": "349c1071-7055-4062-a943-dba2fdadfefe",
+		"name": "EEPC API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "40794900"
+	},
+	"item": [
+		{
+			"name": "Member Dashboard",
+			"item": [
+				{
+					"name": "Member Profile",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "mem_id",
+									"value": "20914",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://members.eepcindia.com/Api_master/my_profile",
+							"protocol": "https",
+							"host": [
+								"members",
+								"eepcindia",
+								"com"
+							],
+							"path": [
+								"Api_master",
+								"my_profile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Participation details",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "mem_id",
+									"value": "M31006",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://app.eepcindia.com/ems/webservices/get_participation_details",
+							"protocol": "https",
+							"host": [
+								"app",
+								"eepcindia",
+								"com"
+							],
+							"path": [
+								"ems",
+								"webservices",
+								"get_participation_details"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "my_membership",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "mem_id",
+									"value": "20914",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://members.eepcindia.com/Api_master/my_membership",
+							"protocol": "https",
+							"host": [
+								"members",
+								"eepcindia",
+								"com"
+							],
+							"path": [
+								"Api_master",
+								"my_membership"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "tender",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://info.eepcindia.org/api/tender",
+							"protocol": "https",
+							"host": [
+								"info",
+								"eepcindia",
+								"org"
+							],
+							"path": [
+								"api",
+								"tender"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "My Export Returns",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"mem_id\": \"M37226\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://export.eepcindia.com/webservices/get_export_information_details",
+							"protocol": "https",
+							"host": [
+								"export",
+								"eepcindia",
+								"com"
+							],
+							"path": [
+								"webservices",
+								"get_export_information_details"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "My Certificate of Origin",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "mem_id",
+									"value": "31006",
+									"type": "text"
+								},
+								{
+									"key": "user_password",
+									"value": "memberisgod",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "https://coo.eepcindia.com/webservices/get_coo_details",
+							"protocol": "https",
+							"host": [
+								"coo",
+								"eepcindia",
+								"com"
+							],
+							"path": [
+								"webservices",
+								"get_coo_details"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Member participation details",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "mem_id",
+									"value": "M31006",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://app.eepcindia.com/ems/webservices/get_participation_details",
+							"protocol": "https",
+							"host": [
+								"app",
+								"eepcindia",
+								"com"
+							],
+							"path": [
+								"ems",
+								"webservices",
+								"get_participation_details"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Member Participation details",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "mem_id",
+									"value": "M30848",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://eepcvirtualexpo.com/webservices/get_participation_details",
+							"protocol": "https",
+							"host": [
+								"eepcvirtualexpo",
+								"com"
+							],
+							"path": [
+								"webservices",
+								"get_participation_details"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Member My Export Returns",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "mem_id",
+									"value": "M34392",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://export.eepcindia.com/webservices/get_export_information_details",
+							"protocol": "https",
+							"host": [
+								"export",
+								"eepcindia",
+								"com"
+							],
+							"path": [
+								"webservices",
+								"get_export_information_details"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://members.eepcindia.com/Api_master/my_profile",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "mem_id",
+									"value": "18031",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://members.eepcindia.com/Api_master/my_profile",
+							"protocol": "https",
+							"host": [
+								"members",
+								"eepcindia",
+								"com"
+							],
+							"path": [
+								"Api_master",
+								"my_profile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "IE2 Tender",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://info.eepcindia.org/api/tender",
+							"protocol": "https",
+							"host": [
+								"info",
+								"eepcindia",
+								"org"
+							],
+							"path": [
+								"api",
+								"tender"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Member Signup",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "mem_id",
+									"value": "00023",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://members.eepcindia.com/Api_master/member_signup",
+							"protocol": "https",
+							"host": [
+								"members",
+								"eepcindia",
+								"com"
+							],
+							"path": [
+								"Api_master",
+								"member_signup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login Employee",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"emp_code\" : \"0339\",\r\n    \"emp_password\" : \"0339\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://www.eepcindia.org/backend/api/employee-login-new",
+							"protocol": "https",
+							"host": [
+								"www",
+								"eepcindia",
+								"org"
+							],
+							"path": [
+								"backend",
+								"api",
+								"employee-login-new"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Member Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "mem_id",
+									"value": "20914",
+									"description": "00023",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "user_password",
+									"value": "18587150",
+									"description": "F6Mou9",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "mem_id",
+									"value": "00023",
+									"type": "text"
+								},
+								{
+									"key": "user_password",
+									"value": "ioaBHv",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://members.eepcindia.com/oauth/validate_user",
+							"protocol": "https",
+							"host": [
+								"members",
+								"eepcindia",
+								"com"
+							],
+							"path": [
+								"oauth",
+								"validate_user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Employee Login",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"emp_code\":\"0339\",\r\n    \"emp_password\":\"0339\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://www.eepcindia.org/backend/api/employee-login-new",
+							"protocol": "https",
+							"host": [
+								"www",
+								"eepcindia",
+								"org"
+							],
+							"path": [
+								"backend",
+								"api",
+								"employee-login-new"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Validate Token",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzkyNzk4OTgsIm5iZiI6MTczOTI3OTg5OCwiZXhwIjoxNzM5Mjk0Mjk4fQ.zvFf6RNjSeH3H9PAlniLc_3FFDX13asSCN7y3iSAafY",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://www.eepcindia.org/api/validate-token",
+							"protocol": "https",
+							"host": [
+								"www",
+								"eepcindia",
+								"org"
+							],
+							"path": [
+								"api",
+								"validate-token"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Member Rest Password",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "mem_id",
+									"value": "00023",
+									"type": "text"
+								},
+								{
+									"key": "mem_email",
+									"value": "ddas@eepcindia.net",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://members.eepcindia.com/Api_master/reset_member_password",
+							"protocol": "https",
+							"host": [
+								"members",
+								"eepcindia",
+								"com"
+							],
+							"path": [
+								"Api_master",
+								"reset_member_password"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Guest Dashboard",
+			"item": [
+				{
+					"name": "Validate Guest User",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "webteam@andreal.in",
+									"type": "text"
+								},
+								{
+									"key": "user_password",
+									"value": "ImpdiM",
+									"type": "text"
+								},
+								{
+									"key": "user_id",
+									"value": "mail2manishu34@gmail.com",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "user_password",
+									"value": "tnyOE",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "https://members.eepcindia.com/Api_master/validate_guest_user",
+							"protocol": "https",
+							"host": [
+								"members",
+								"eepcindia",
+								"com"
+							],
+							"path": [
+								"Api_master",
+								"validate_guest_user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Guest Signup",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Ajahar Mallick",
+									"type": "text"
+								},
+								{
+									"key": "designation",
+									"value": "Devloper",
+									"type": "text"
+								},
+								{
+									"key": "organization",
+									"value": "Andreal",
+									"type": "text"
+								},
+								{
+									"key": "emailid",
+									"value": "webteam@andreal.in",
+									"type": "text"
+								},
+								{
+									"key": "mobile",
+									"value": "6294245567",
+									"type": "text"
+								},
+								{
+									"key": "token_1",
+									"value": "7b4ea52df45cca85fcd1c8ff9a1e33d0b6f9803e",
+									"type": "text"
+								},
+								{
+									"key": "token_2",
+									"value": "c0800fd6c3558c09b0552121e2591e2df2c9c096",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://members.eepcindia.com/Api_master/website_guest_signup",
+							"protocol": "https",
+							"host": [
+								"members",
+								"eepcindia",
+								"com"
+							],
+							"path": [
+								"Api_master",
+								"website_guest_signup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Guest Profile",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_email",
+									"value": "webteam@andreal.in",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://members.eepcindia.com/Api_master/forgot_guest_password",
+							"protocol": "https",
+							"host": [
+								"members",
+								"eepcindia",
+								"com"
+							],
+							"path": [
+								"Api_master",
+								"forgot_guest_password"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://members.eepcindia.com/Api_master/my_membership",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "mem_id",
+									"value": "20914",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://members.eepcindia.com/Api_master/my_membership",
+							"protocol": "https",
+							"host": [
+								"members",
+								"eepcindia",
+								"com"
+							],
+							"path": [
+								"Api_master",
+								"my_membership"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://app.eepcindia.com/ems/webservices/get_participation_details",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "mem_id",
+									"value": "M31006",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://app.eepcindia.com/ems/webservices/get_participation_details",
+							"protocol": "https",
+							"host": [
+								"app",
+								"eepcindia",
+								"com"
+							],
+							"path": [
+								"ems",
+								"webservices",
+								"get_participation_details"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Indian Supplier",
+			"item": [
+				{
+					"name": "Panel List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://rcmc.eepcindia.com/webservices/get_panel_list",
+							"protocol": "https",
+							"host": [
+								"rcmc",
+								"eepcindia",
+								"com"
+							],
+							"path": [
+								"webservices",
+								"get_panel_list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "State List",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://rcmc.eepcindia.com/webservices/get_state_list",
+							"protocol": "https",
+							"host": [
+								"rcmc",
+								"eepcindia",
+								"com"
+							],
+							"path": [
+								"webservices",
+								"get_state_list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "City List",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://rcmc.eepcindia.com/webservices/get_city_list",
+							"protocol": "https",
+							"host": [
+								"rcmc",
+								"eepcindia",
+								"com"
+							],
+							"path": [
+								"webservices",
+								"get_city_list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Panel wise",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "access_token",
+									"value": "ec114620220922-RCMC-andr-20220930",
+									"type": "text"
+								},
+								{
+									"key": "panel",
+									"value": "P01",
+									"type": "text"
+								},
+								{
+									"key": "sort_by",
+									"value": "a",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://rcmc.eepcindia.com/webservices/search_member_directory_panelwise",
+							"protocol": "https",
+							"host": [
+								"rcmc",
+								"eepcindia",
+								"com"
+							],
+							"path": [
+								"webservices",
+								"search_member_directory_panelwise"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Product wise",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "access_token",
+									"value": "ec114620220922-RCMC-andr-20220930",
+									"type": "text"
+								},
+								{
+									"key": "product",
+									"value": "a",
+									"type": "text"
+								},
+								{
+									"key": "sort_by",
+									"value": "a",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://rcmc.eepcindia.com/webservices/search_member_directory_productwise",
+							"protocol": "https",
+							"host": [
+								"rcmc",
+								"eepcindia",
+								"com"
+							],
+							"path": [
+								"webservices",
+								"search_member_directory_productwise"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "HS Code",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "access_token",
+									"value": "ec114620220922-RCMC-andr-20220930",
+									"type": "text"
+								},
+								{
+									"key": "hscode",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "sort_by",
+									"value": "z",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://rcmc.eepcindia.com/webservices/search_member_directory_hscodewise",
+							"protocol": "https",
+							"host": [
+								"rcmc",
+								"eepcindia",
+								"com"
+							],
+							"path": [
+								"webservices",
+								"search_member_directory_hscodewise"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Company",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "access_token",
+									"value": "ec114620220922-RCMC-andr-20220930",
+									"type": "text"
+								},
+								{
+									"key": "organization",
+									"value": "a",
+									"type": "text"
+								},
+								{
+									"key": "sort_by",
+									"value": "z",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://rcmc.eepcindia.com/webservices/search_member_directory_organizationwise",
+							"protocol": "https",
+							"host": [
+								"rcmc",
+								"eepcindia",
+								"com"
+							],
+							"path": [
+								"webservices",
+								"search_member_directory_organizationwise"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Region wise",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "access_token",
+									"value": "ec114620220922-RCMC-andr-20220930",
+									"type": "text"
+								},
+								{
+									"key": "region",
+									"value": "western",
+									"type": "text"
+								},
+								{
+									"key": "sort_by",
+									"value": "z",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://rcmc.eepcindia.com/webservices/search_member_directory_regionwise",
+							"protocol": "https",
+							"host": [
+								"rcmc",
+								"eepcindia",
+								"com"
+							],
+							"path": [
+								"webservices",
+								"search_member_directory_regionwise"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "State wise",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "access_token",
+									"value": "ec114620220922-RCMC-andr-20220930",
+									"type": "text"
+								},
+								{
+									"key": "state",
+									"value": "Bihar",
+									"type": "text"
+								},
+								{
+									"key": "sort_by",
+									"value": "a",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://rcmc.eepcindia.com/webservices/search_member_directory_statewise",
+							"protocol": "https",
+							"host": [
+								"rcmc",
+								"eepcindia",
+								"com"
+							],
+							"path": [
+								"webservices",
+								"search_member_directory_statewise"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "City wise",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "access_token",
+									"value": "ec114620220922-RCMC-andr-20220930",
+									"type": "text"
+								},
+								{
+									"key": "city",
+									"value": "Agra",
+									"type": "text"
+								},
+								{
+									"key": "sort_by",
+									"value": "a",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://rcmc.eepcindia.com/webservices/search_member_directory_citywise",
+							"protocol": "https",
+							"host": [
+								"rcmc",
+								"eepcindia",
+								"com"
+							],
+							"path": [
+								"webservices",
+								"search_member_directory_citywise"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Send mail",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "access_token",
+									"value": "ec114620220922-RCMC-andr-20220930",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "info@avvalves.com",
+									"type": "text"
+								},
+								{
+									"key": "subject",
+									"value": "test",
+									"type": "text"
+								},
+								{
+									"key": "value",
+									"value": "test body",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://api.sendgrid.com/v3/mail/send",
+							"protocol": "https",
+							"host": [
+								"api",
+								"sendgrid",
+								"com"
+							],
+							"path": [
+								"v3",
+								"mail",
+								"send"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Login Super",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\" : \"super#1\",\r\n    \"password\" : \"12345\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://eepcindia.org/api/admin-login",
+					"protocol": "https",
+					"host": [
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"admin-login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Brief Profile",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.eepcindia.org/api/brief-profile",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"brief-profile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Brief Profile Update",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"brief_profile\": \"<p>Demo</p\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.eepcindia.org/api/update-brief-profile",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"update-brief-profile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Activities and Services",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"activities_and_services\":\"Test Activities and Services\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.eepcindia.org/api/update-activities-and-services",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"update-activities-and-services"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Chairman Pen",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"chairman_pen\": \"Demio<div id=\\\"_mcePaste\\\" class=\\\"mcePaste\\\">\\n    <div class=\\\"k-box\\\">\\n    <img src=\\\"https://www.eepcindia.org//uploads/1732101935.jpg\\\" alt=\\\"images\\\" class=\\\"img-fluid mx-auto d-block chairman rounded-circle\\\">  \\n    <hgroup class=\\\"text-center\\\">\\n    <h5>Mr. Pankaj Chadha</h5>\\n    <h6 class=\\\"fw-ligher mb-3\\\">Chairman</h6>\\n    </hgroup>\\n    \\n    <p><span class=\\\"fa fa-quote-left ork\\\"></span><font face=\\\"Font Awesome 5 Free\\\"><b>&nbsp;</b></font><span style=\\\"font-family: \\\" times=\\\"\\\" new=\\\"\\\" roman\\\",=\\\"\\\" \\\"serif\\\";=\\\"\\\" text-align:=\\\"\\\" justify;=\\\"\\\" font-size:=\\\"\\\" 0.95rem;\\\"=\\\"\\\">In\\nthe last decade the Government of India has introduced a number of schemes such\\nas PLI or Production Linked Incentive Scheme, Atmanirbhar Bharat, etc. to boost\\nIndia’s manu­facturing ability. The schemes have been target­ed to make India a\\nglobal manufacturing hub. Accordingly the government has set a target to\\nachieve USD 1 trillion merchandise exports by 2030. While these are positive\\nsteps towards de­veloping India’s manufacturing prowess, there are several\\nexternal factors that pose risk to In­dia’s manufacturing sector and climate\\nchange is one such factor that affects India’s manufactur­ing sector\\nsignificantly. Climate change’s impact on manufacturing can be manifested as a\\nrisk to local value chains. It can also take the form of non-tariff barriers by\\nmajor import destinations which could be disastrous for exports. As per a\\nrecent article in the Journal, Global Change Biol­ogy, it is stated that labour\\nproductivity in South Asian countries including India may decline by 40% due to\\nclimate change and excessive heat. Simultaneously exporters are also expressing\\nconcerns regarding the introduction of CBAM or Carbon Border Assessment Tax by\\nEU on cer­tain imported products which include steel and aluminium. Many other\\ncountries especially de­veloped nations may follow suit soon and bring their or\\ncarbon tax. Infact Germany has already introduced Low Emission Steel Standard\\n(LESS) which could present new challenges for the Indi­an steel industry.</span></p><p><span style=\\\"font-family: \\\" times=\\\"\\\" new=\\\"\\\" roman\\\",=\\\"\\\" \\\"serif\\\";=\\\"\\\" text-align:=\\\"\\\" justify;=\\\"\\\" font-size:=\\\"\\\" 0.95rem;\\\"=\\\"\\\">Given\\nthis backdrop, it is imperative that EEPC India increases its focus on climate\\nchange and sustainable manufacturing. Hence this has been the main focus of\\nthis year’s IESS – 12th edition of the largest engineering sourcing show in In­dia.\\nThis year the show is happening in Chennai and it moto is “#Smartsustainable\\nengineering”. The three day event happening between 27th and 29th November is\\nbringing a range of prod­ucts with smart and sustainable manufacturing.</span></p>\\n\\n<p class=\\\"Pa18\\\" style=\\\"text-align:justify\\\"><span style=\\\"font-family:\\\" times=\\\"\\\" new=\\\"\\\" roman\\\",\\\"serif\\\"\\\"=\\\"\\\">Now\\nit’s time for a peak into the current ex­port figures of the engineering\\nsector. India’s engineering exports continued its stellar per­formance for the\\nfifth consecutive month in September 2024 with a growth rate of 10.55% in\\nmonthly terms and 5.25% in cumulative terms. The increase was majorly continued\\nby industrial machinery, electrical machinery, au­tomobile and auto components,\\nmedical devic­es, etc. Decline in both monthly and cumulative (April-September\\n2024) terms was evident in the ferrous and non-ferrous metal sector. This can\\nbe mainly attributed to global uncertainties, shifting trade policies and in\\nsome instances ris­ing domestic demand. The performance of the industry is also\\nreflective of the current global trade trends. The recent WTO global update has\\nalso been positive despite potential setbacks trig­gered by geopolitical\\nconflicts. WTO revised the projected growth rate of global trade in goods in\\n2024 from the last 2.6% to 2.7%. The WTO how­ever cautions that despite the\\npositive outlook, governments and industries should be cautious as rising\\ngeopolitical tensions and increased economic policy uncertainty continue to\\npose substantial downside risks to the forecast. We are thankful to the\\ngovernment for their timely support and urge them to continue assisting the\\nindustry in these volatile times.</span></p>\\n\\n<p class=\\\"MsoNormal\\\" style=\\\"margin-bottom:0in;margin-bottom:.0001pt;text-align:\\njustify\\\"><span style=\\\"font-size:12.0pt;line-height:115%;font-family:\\\" times=\\\"\\\" new=\\\"\\\" roman\\\",\\\"serif\\\"\\\"=\\\"\\\">Finally,\\nas EEPC India completes its eventful journey of 70 years, it is determined in\\nits mis­sion to help in the growth of Indian engineering sector and stabilise\\nits position in global mar­kets. While we are organising the IESS, we are also\\nparticipating in a number of international exhibitions in the coming months.\\nSome of the major events which are coming up include Gulfood Manufacturing 2024\\nto be held in Dubai, Elmia Subcontractor 2024 to be held in Sweden, Mach &amp;\\ntools Saudi 2024 and Gulf 4P to be held in Dubai, Vinamac to be held in\\nVietnam. Apart from that keeping the issues of sustainability and smart\\nmanufacturing, EEPC India is also partic­ipating in International Conference on\\nCircular Economy to be held in Mumbai. All the details of these events are\\navailable in EEPC India web­site. I invite all the exporters to participate in\\nthe exhibitions relevant to their products to expand their market reach. I also\\nwant to take this op­portunity to wish the EEPC Team best wishes for the\\nsuccessful organisation of this year’s IESS.</span></p><p class=\\\"MsoNormal\\\" style=\\\"margin-bottom:0in;margin-bottom:.0001pt;text-align:\\njustify\\\"><br></p><p class=\\\"MsoNormal\\\" style=\\\"margin-bottom:0in;margin-bottom:.0001pt;text-align:\\njustify\\\"><span style=\\\"font-size:12.0pt;line-height:115%;font-family:\\\" times=\\\"\\\" new=\\\"\\\" roman\\\",\\\"serif\\\"\\\"=\\\"\\\"><o:p></o:p></span></p><p class=\\\"MsoNormal\\\" style=\\\"margin-bottom:0in;margin-bottom:.0001pt;text-align:\\njustify\\\"><span style=\\\"font-size:12.0pt;line-height:115%;font-family:\\\" times=\\\"\\\" new=\\\"\\\" roman\\\",\\\"serif\\\"\\\"=\\\"\\\"><o:p></o:p></span></p><p class=\\\"MsoNormal\\\" style=\\\"margin-bottom:0in;margin-bottom:.0001pt;text-align:\\njustify\\\"><span style=\\\"font-size:12.0pt;line-height:115%;font-family:\\\" times=\\\"\\\" new=\\\"\\\" roman\\\",\\\"serif\\\"\\\"=\\\"\\\"><o:p></o:p></span></p><p class=\\\"MsoNormal\\\" style=\\\"margin-bottom:0cm;margin-bottom:.0001pt;text-align:\\njustify\\\">\\n    \\n    </p><div class=\\\"sig-holder\\\">\\n       <img src=\\\"https://www.eepcindia.org//uploads/1732102205.jpg\\\" alt=\\\"images\\\" class=\\\"img-fluid mb-3\\\">\\n       <h6 class=\\\"fw-ligher\\\">Mr. Pankaj Chadha</h6>\\n    </div>                       \\n    \\n    </div>\\n    </div>\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.eepcindia.org/api/update-chairman-pen",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"update-chairman-pen"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Chairmen Pen Update",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "https://www.eepcindia.org/api/update-chairman-pen",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"update-chairman-pen"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Seminars and Conferences",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.eepcindia.org/api/seminars-and-conferences",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"seminars-and-conferences"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Activities and Services",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"activities_and_services\": \"activities_and_services Updated\"\n}"
+				},
+				"url": {
+					"raw": "https://www.eepcindia.org/api/update-activities-and-services",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"update-activities-and-services"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Seminars-and-conferences",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"seminars_and_conferences\": \"updated\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.eepcindia.org/api/update-seminars-and-conferences",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"update-seminars-and-conferences"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FAQ",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.eepcindia.org/backend/api/faq",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"backend",
+						"api",
+						"faq"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FAQ by ID/Edit FAQ",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.eepcindia.org/api/edit-faq/1",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"edit-faq",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add FAQ",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"sl_no\":\"100\",\r\n    \"question\":\"Test FAQ Question Updated\",\r\n    \"answer\":\"Test FAQ Answer Updated\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.eepcindia.org/api/add-faq",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"add-faq"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FAQ Update",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"sl_no\":\"17\",\r\n    \"question\":\"Test FAQ Question\",\r\n    \"answer\":\"Test FAQ Answer\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.eepcindia.org/api/update-faq/17",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"update-faq",
+						"17"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DElete FAQ",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://www.eepcindia.org/api/delete-faq/17",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"delete-faq",
+						"17"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Metal Price Monitor",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://eepcindia.org/api/metal-price-monitor-archive-list?limit=10",
+					"protocol": "https",
+					"host": [
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"metal-price-monitor-archive-list"
+					],
+					"query": [
+						{
+							"key": "limit",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ie2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://eepcindia.org/api/ie2-archive-list",
+					"protocol": "https",
+					"host": [
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"ie2-archive-list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Import Export Monitor",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://eepcindia.org/api/export-import-monitor?limit=10",
+					"protocol": "https",
+					"host": [
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"export-import-monitor"
+					],
+					"query": [
+						{
+							"key": "limit",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://eepcindia.org/api/album",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://eepcindia.org/api/album",
+					"protocol": "https",
+					"host": [
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"album"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "past-events",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://eepcindia.org/backend/api/all-past-events",
+					"protocol": "https",
+					"host": [
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"backend",
+						"api",
+						"all-past-events"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "all-webinar-seminar",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://eepcindia.org/backend/api/all-webinar-seminar",
+					"protocol": "https",
+					"host": [
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"backend",
+						"api",
+						"all-webinar-seminar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://eepcindia.org/api/guest-users",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "https://eepcindia.org/backend/api/guest-users",
+					"protocol": "https",
+					"host": [
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"backend",
+						"api",
+						"guest-users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://eepcindia.org/api/upcoming-events",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://eepcindia.org/api/upcoming-events",
+					"protocol": "https",
+					"host": [
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"upcoming-events"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://eepcindia.org/api/publications",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://eepcindia.org/api/publications",
+					"protocol": "https",
+					"host": [
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"publications"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://eepcindia.org/api/hs-codes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://eepcindia.org/api/hs-codes",
+					"protocol": "https",
+					"host": [
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"hs-codes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Latest IE2 Metal Infobulletin Metal Price Monitor",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://eepcindia.org/api/archive-ie2-metal-infobulletin-metal",
+					"protocol": "https",
+					"host": [
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"archive-ie2-metal-infobulletin-metal"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Infobulletin Limit",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://info.eepcindia.org/api/infobulletin",
+					"protocol": "https",
+					"host": [
+						"info",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"infobulletin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://eepcindia.org/api/album?limit=20",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"emp_code\": \"0339\",\r\n    \"emp_password\": \"0339\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://eepcindia.org/api/album?limit=20",
+					"protocol": "https",
+					"host": [
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"album"
+					],
+					"query": [
+						{
+							"key": "limit",
+							"value": "20"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://eepcindia.org/api/upcoming-events",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://eepcindia.org/api/upcoming-events",
+					"protocol": "https",
+					"host": [
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"upcoming-events"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://www.eepcindia.org/api/album-category-with-edition/iess/ix",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.eepcindia.org/api/album-category-with-edition/iess/ix",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"album-category-with-edition",
+						"iess",
+						"ix"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "IE2 Metal Infobulletin Import Export Monitor",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.eepcindia.org/api/archive-ie2-metal-infobulletin-metal",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"archive-ie2-metal-infobulletin-metal"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Upcoming Webinar Seminar",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.eepcindia.org/backend/api/upcoming-webinar-seminar",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"backend",
+						"api",
+						"upcoming-webinar-seminar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://www.eepcindia.org/api/webinar-seminar",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.eepcindia.org/backend/api/webinar-seminar",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"backend",
+						"api",
+						"webinar-seminar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://news.eepcindia.com/webservices/get_news",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://news.eepcindia.com/webservices/get_news",
+					"protocol": "https",
+					"host": [
+						"news",
+						"eepcindia",
+						"com"
+					],
+					"path": [
+						"webservices",
+						"get_news"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://www.eepcindia.org/api/all-webinar-seminar",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.eepcindia.org/api/all-webinar-seminar",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"all-webinar-seminar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://www.eepcindia.org/admin/api/update-brief-profile",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"brief_profile\":\"test profile content\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.eepcindia.org/api/update-brief-profile",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"update-brief-profile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://www.eepcindia.org/admin/api/brief-profile",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.eepcindia.org/api/brief-profile",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"brief-profile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://www.eepcindia.org/admin/api/delete-product-panel/47",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://www.eepcindia.org/admin/api/delete-product-panel/47",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"admin",
+						"api",
+						"delete-product-panel",
+						"47"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://www.eepcindia.org/admin/api/update-product-panel/47",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"sl_no\": 1,\r\n    \"panel_name\": \"New Panel Name11\",\r\n    \"convenor\": \"John Doe\",\r\n    \"officer\": \"Jane Smith\",\r\n    \"details\": \"Updated details about the product panel\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.eepcindia.org/admin/api/update-product-panel/47",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"admin",
+						"api",
+						"update-product-panel",
+						"47"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://www.eepcindia.org/admin/api/product-panel",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.eepcindia.org/admin/api/product-panel",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"admin",
+						"api",
+						"product-panel"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://apiv2.shiprocket.in/v1/external/auth/login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"mayank@themlagroup.in\",\r\n  \"password\": \"Mayank@1234\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://apiv2.shiprocket.in/v1/external/auth/login",
+					"protocol": "https",
+					"host": [
+						"apiv2",
+						"shiprocket",
+						"in"
+					],
+					"path": [
+						"v1",
+						"external",
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://eepcindia.org/api/admin-login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"super#1\",\r\n    \"password\":\"12345\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://eepcindia.org/api/admin-login",
+					"protocol": "https",
+					"host": [
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"admin-login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://www.eepcindia.org/api/indee-exhibition",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.eepcindia.org/api/events/indee-exhibitions-text",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"events",
+						"indee-exhibitions-text"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://www.eepcindia.org/api/update-indee-exhibition",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"indee_exhibition\":\"Update Indee Exibition\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.eepcindia.org/api/update-indee-exhibition",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"update-indee-exhibition"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Seminars and Conferences",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"seminars_and_conferences\":\"Seminars and Conferences Updated\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.eepcindia.org/api/update-seminars-and-conferences",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"update-seminars-and-conferences"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buyer Seller Meet Delegation",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.eepcindia.org/api/buyer-seller-meet-delegation",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"buyer-seller-meet-delegation"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Services to Foreign Buyers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.eepcindia.org/api/services-to-foreign-buyers",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"services-to-foreign-buyers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Services to Foreign Buyers",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"services_to_foreign_buyers\":\"Services to Foreign Buyers Updated\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.eepcindia.org/api/update-services-to-foreign-buyers",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"update-services-to-foreign-buyers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Exhibitions and Trade Fairs",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"exhibitions_and_trade_fairs\":\"Exhibitions and Trade Fairs Updated\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.eepcindia.org/api/update-exhibitions-and-trade-fairs",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"update-exhibitions-and-trade-fairs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Exhibitions and Trade Fairs",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.eepcindia.org/api/exhibitions-and-trade-fairs",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"exhibitions-and-trade-fairs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Services to Members",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"services_to_members\":\"Services to Members Updated\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.eepcindia.org/api/update-services-to-members",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"update-services-to-members"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Services to Members",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.eepcindia.org/api/services-to-members",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"services-to-members"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Promote Made in India Brand",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"promote_made_in_india_brand\":\"Promote Made in India Brand Updated\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.eepcindia.org/api/update-promote-made-in-india-brand",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"update-promote-made-in-india-brand"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Promote Made in India Brand",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.eepcindia.org/api/promote-made-in-india-brand",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"promote-made-in-india-brand"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Buyer Seller Meet Delegation",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"buyer_seller_meet_delegation\":\"Buyer Seller Meet Delegation Updated\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.eepcindia.org/api/update-buyer-seller-meet-delegation",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"update-buyer-seller-meet-delegation"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Export Statics",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.eepcindia.org/api/export-statics",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"export-statics"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Export Statistics",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"export_statics\":\"Export Statistics Updated\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.eepcindia.org/api/update-export-statistics",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"update-export-statistics"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Glossary",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.eepcindia.org/api/glossary",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"glossary"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Glossary",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"eg_name\":\"EXIM Glossary\",\r\n    \"eg_details\":\"EXIM Glossary Details\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.eepcindia.org/api/add-glossary",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"add-glossary"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit Glossary/ View Glossary/ Get Glossery by ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.eepcindia.org/api/edit-glossary/604",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"edit-glossary",
+						"604"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Glossary",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"eg_name\":\"EXIM Glossary Updated\",\r\n    \"eg_details\":\"EXIM Glossary Details Updated\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.eepcindia.org/api/update-glossary/604",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"update-glossary",
+						"604"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Glossary",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://www.eepcindia.org/api/delete-glossary/604",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"delete-glossary",
+						"604"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Incoterms",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.eepcindia.org/api/incoterms",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"incoterms"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Incoterms",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"incoterms\":\"Incoterms Updated\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.eepcindia.org/api/update-incoterms",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"update-incoterms"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "India Design Mark",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.eepcindia.org/api/india-design-mark",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"india-design-mark"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "India Design Mark Updated",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"india_design_mark\":\"India Design Mark Updated\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.eepcindia.org/api/update-india-design-mark",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"update-india-design-mark"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://www.eepcindia.org/api/update-india-design-mark",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"india_design_mark\":\"India Design Mark Updated\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.eepcindia.org/api/update-india-design-mark",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"update-india-design-mark"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update India Design Mark",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"india_a_snapshot\":\"India: A snapshot Update\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.eepcindia.org/api/update-india-a-snapshot",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"update-india-a-snapshot"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "India Design Mark",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.eepcindia.org/api/india-a-snapshot",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"india-a-snapshot"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Membership Benefits",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"membership_benefits\":\"Membership Benefits Updated\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.eepcindia.org/api/update-membership-benefits",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"update-membership-benefits"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Membership Benefits",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.eepcindia.org/api/membership-benefits",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"membership-benefits"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update India Suppliers ",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"india_suppliers\":\"India Suppliers Updated\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.eepcindia.org/backend/api/update-india-suppliers",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"backend",
+						"api",
+						"update-india-suppliers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "India Suppliers",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.eepcindia.org/backend/api/india-suppliers",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"backend",
+						"api",
+						"india-suppliers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Exporters",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.eepcindia.org/backend/api/exporters",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"backend",
+						"api",
+						"exporters"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Exporters",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"exporter_name\": \"Test Exporter\",\r\n    \"exporter_link\": \"https://www.eepcindia.org/\",\r\n    \"exporter_details\": \"Test Exporter Details\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.eepcindia.org/api/add-exporters",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"add-exporters"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit Exporters",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.eepcindia.org/api/edit-exporters/74",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"edit-exporters",
+						"74"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Exporters",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"exporter_name\": \"Test Exporter Updated\",\r\n    \"exporter_link\": \"https://www.eepcindia.org/events\",\r\n    \"exporter_details\": \"Test Exporter Details Update\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.eepcindia.org/api/update-exporters/74",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"update-exporters",
+						"74"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Exporters",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://www.eepcindia.org/api/delete-exporters/74",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"delete-exporters",
+						"74"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Past Chairmen",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.eepcindia.org/api/past-chairmen",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"past-chairmen"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Past Chairmen",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Test Chairmen\",\r\n    \"year\":\"2020-2024\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.eepcindia.org/api/add-past-chairmen",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"add-past-chairmen"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit/View Past Chairmen",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.eepcindia.org/api/edit-past-chairmen/30",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"edit-past-chairmen",
+						"30"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Past Chairmen",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"sl_no\":\"30\",\r\n    \"year\":\"2022-2025\",\r\n    \"name\":\"Test Chairmen Updated\",\r\n    \"highlights\":\"Test Highlights Updated\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.eepcindia.org/api/update-past-chairmen/30",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"update-past-chairmen",
+						"30"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Past Chairmen",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://www.eepcindia.org/api/delete-past-chairmen/30",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"delete-past-chairmen",
+						"30"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Working Committee",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.eepcindia.org/api/working-committee",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"working-committee"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Working Committee",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Test Name\",\r\n    \"designation\":\"Tester\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.eepcindia.org/api/add-working-committee",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"add-working-committee"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit Working Committee",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.eepcindia.org/api/edit-working-committee/62",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"edit-working-committee",
+						"62"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Working Committee",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"sl_no\":\"62\",\r\n    \"name\":\"Test Name Updated\",\r\n    \"designation\":\"Tester Updated\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.eepcindia.org/api/update-working-committee/62",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"update-working-committee",
+						"62"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Working Committee",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://www.eepcindia.org/api/delete-working-committee/62",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"delete-working-committee",
+						"62"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Election for the Post of Senior Vice Chairman",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.eepcindia.org/api/election-for-the-post-of-senior-vice-chairman",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"election-for-the-post-of-senior-vice-chairman"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Election for the Post of Senior Vice Chairman",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"election_for_the_post_of_senior_vice_chairman\":\"Election for the post of Senior Vice Chairman Updated Successfully\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.eepcindia.org/api/update-election-for-the-post-of-senior-vice-chairman",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"update-election-for-the-post-of-senior-vice-chairman"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Working Committee Election",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.eepcindia.org/backend/api/working-committee-election",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"backend",
+						"api",
+						"working-committee-election"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Working Committee Election",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"working_committee_election\":\"Working Committee Election Updated Successfully\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.eepcindia.org/backend/api/update-working-committee-election",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"backend",
+						"api",
+						"update-working-committee-election"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Committee of Administration",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.eepcindia.org/backend/api/committee-of-administration",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"backend",
+						"api",
+						"committee-of-administration"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add committee of Administration",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Test Name\",\r\n    \"designation\":\"Test Designation\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.eepcindia.org/backend/api/add-committee-of-administration",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"backend",
+						"api",
+						"add-committee-of-administration"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit/View Add committee of Administration",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.eepcindia.org/backend/api/edit-committee-of-administration/19",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"backend",
+						"api",
+						"edit-committee-of-administration",
+						"19"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update committee of Administration",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"sl_no\":\"19\",\r\n    \"name\":\"Test Name\",\r\n    \"designation\":\"Test Designation\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.eepcindia.org/backend/api/update-committee-of-administration/19",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"backend",
+						"api",
+						"update-committee-of-administration",
+						"19"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete committee of Administration",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://www.eepcindia.org/backend/api/delete-committee-of-administration/19",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"backend",
+						"api",
+						"delete-committee-of-administration",
+						"19"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Committees",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.eepcindia.org/api/committees",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"committees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Committees",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"committees\":\"Committees Updateddddd\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.eepcindia.org/api/update-committees",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"update-committees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deputy Regional Chairmen",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.eepcindia.org/api/deputy-regional-chairmen",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"deputy-regional-chairmen"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update deputy Regional Chairmen",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"deputy_regional_chairmen\":\"Deputy Regional Chairmen Updated\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.eepcindia.org/api/update-deputy-regional-chairmen",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"update-deputy-regional-chairmen"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Standardization Cell",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.eepcindia.org/api/standardization-cell",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"standardization-cell"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Standardization Cell",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"standardization_cell\":\"Standardization Cell Updated\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.eepcindia.org/api/update-standardization-cell",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"update-standardization-cell"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Chapters",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.eepcindia.org/api/chapters",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"chapters"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Chapters",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"city\":\"kolkata\",\r\n    \"state\":\"West Bengal\",\r\n    \"region\":\"Eastern Region\",\r\n    \"convener\":\"Test Convenor\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.eepcindia.org/api/add-chapters",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"add-chapters"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit/View Chapters",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.eepcindia.org/api/edit-chapters/19",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"edit-chapters",
+						"19"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Chapters",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"city\":\"Kolkata\",\r\n    \"state\":\"\",\r\n    \"sl_no\":\"19\",\r\n    \"date_inauguration\":\"09-Jan-25\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.eepcindia.org/api/update-chapters/19",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"update-chapters",
+						"19"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Chapters",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://www.eepcindia.org/api/delete-chapters/19",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"delete-chapters",
+						"19"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Annual General Meeting",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.eepcindia.org/api/annual-general-meeting",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"annual-general-meeting"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Annual General Meeting",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"annual_general_meeting\":\"Annual General Meeting Updated\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.eepcindia.org/api/update-annual-general-meeting",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"update-annual-general-meeting"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Award Scheme",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.eepcindia.org/backend/api/award-scheme/national-awards-for-export-excellence-2008-09-presentation-ceremony",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"backend",
+						"api",
+						"award-scheme",
+						"national-awards-for-export-excellence-2008-09-presentation-ceremony"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Award Scheme",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"place\":\"Test Place\",\r\n    \"name\":\"Test Name\",\r\n    \"slug\":\"test-name\",\r\n    \"details\":\"Test Details\",\r\n    \"is_new\":\"1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.eepcindia.org/api/add-award-scheme",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"add-award-scheme"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Award Scheme",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"details\":\"Test Details Updated\",\r\n    \"is_new\":\"1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.eepcindia.org/api/update-award-scheme/72",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"update-award-scheme",
+						"72"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delet Award Scheme",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://www.eepcindia.org/api/delete-award-scheme/72",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"delete-award-scheme",
+						"72"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RODTEP",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.eepcindia.org/api/rodtep",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"rodtep"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update RODTEP",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"rodtep\":\"RODTEP Updated\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.eepcindia.org/api/update-rodtep",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"update-rodtep"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "depb-rates",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.eepcindia.org/api/depb-rates",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"depb-rates"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Foreign Trade Policy",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"foreign_trade_policy\":\"Foreign Trade Policy Updated\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.eepcindia.org/api/update-foreign-trade-policy",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"update-foreign-trade-policy"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GST Circular Notification Details",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.eepcindia.org/api/gst-circular-notification-details",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"gst-circular-notification-details"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update GST Circular Notification Details",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"gst_circular_notification_details\":\"hhhhhhhhhhhhhhhh updated\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.eepcindia.org/api/update-gst-circular-notification-details",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"update-gst-circular-notification-details"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DEPB Rates List/Add/View",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.eepcindia.org/api/depb-rates/",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"depb-rates",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add DEPB Rates",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"depb_desc\":\"Test DEPB Description\",\r\n    \"depb_rate\":\"10.00\",\r\n    \"depb_value\":\"100KG\",\r\n    \"full_no\":\"T0001\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.eepcindia.org/api/add-depb-rates",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"add-depb-rates"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update DEPB Rates",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"depb_desc\":\"Test DEPB Description Updated\",\r\n    \"depb_rate\":\"10.00\",\r\n    \"depb_value\":\"\",\r\n    \"full_no\":\"0001\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.eepcindia.org/api/update-depb-rates/661",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"update-depb-rates",
+						"661"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete DEPB Rates",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://www.eepcindia.org/api/delete-depb-rates/662",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"delete-depb-rates",
+						"662"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Upcoming Events",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.eepcindia.org/backend/api/upcoming-events",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"backend",
+						"api",
+						"upcoming-events"
+					],
+					"query": [
+						{
+							"key": "limit",
+							"value": "3",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "HS Codes List",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.eepcindia.org/api/hs-codes-list/",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"hs-codes-list",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add HS Codes",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"hs_code\":\"95089999\",\r\n    \"unit\":\"KGS\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.eepcindia.org/api/add-hs-codes",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"add-hs-codes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update HS Codes",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"unit\":\"KGS\",\r\n    \"commodity_desc\":\"Updated\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.eepcindia.org/api/update-hs-codes/5485",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"update-hs-codes",
+						"5485"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Chairman Pen",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "multipart/form-data",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "chairman_name",
+							"value": "Pankaj Chadda",
+							"type": "text"
+						},
+						{
+							"key": "chairman_signature",
+							"type": "file",
+							"src": "/C:/Users/user/Downloads/Pankaj_chadda_sign.jpg"
+						},
+						{
+							"key": "chairman_image",
+							"type": "file",
+							"src": "/C:/Users/user/Downloads/Pankaj_chadda_pic.jpg"
+						},
+						{
+							"key": "chairman_pen",
+							"value": "test demo updated",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://www.eepcindia.org/api/update-chairman-pen",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"update-chairman-pen"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ie2-metal-infobulletin-metal",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.eepcindia.org/api/archive-ie2-metal-infobulletin-metal",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"archive-ie2-metal-infobulletin-metal"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Certificate of Origin",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.eepcindia.org/api/certificate-of-origin",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"certificate-of-origin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "MAI Assistance",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.eepcindia.org/api/mai-assistance",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"mai-assistance"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update MAI Assistance",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"mai_assistance\":\"<h3><div style=\"text-align: center;\"><b style=\"font-family: inherit;\">Financial assistance to engineering exporters-&nbsp;</b></div><b><div style=\"text-align: center;\"><b style=\"font-family: inherit;\">as Reimbursement of expenditure incurred by exporters on Statutory</b></div></b><b><div style=\"text-align: center;\"><b style=\"font-family: inherit;\">Compliances for export of Engineering Goods including for Testing and</b></div></b><b><div style=\"text-align: center;\"><b style=\"font-family: inherit;\">Certification charges</b></div></b></h3><div style=\"text-align: center;\"><br></div><div style=\"text-align: center;\"><b>Under the MAI Scheme of Ministry of Commerce and Industry, Government of India&nbsp;</b></div><div>&nbsp;</div><div>With a view to enhance Indian engineering competitiveness in the global markets, the Government</div><div>offers financial assistance towards Testing, Certification and other Statutory Compliances for export of</div><div>Engineering Goods.</div><div><br></div><div>EEPC India has been assigned as the nodal body for processing the application for the Engineering</div><div>sector.</div><div><br></div><div><b>Key Highlights &amp; Benefits:&nbsp;</b></div><ul><li>Applicable to Testings, Certifications and Statutory compliances in India or abroad.</li><li>Financial assistance is provided in the form of reimbursements.</li><li>Sharing pattern: 50%: 50%.</li><li>Ceiling of assistance: Rs. 2.00 Cr per annum per exporter.</li><li>All export markets covered</li></ul><div><b>Procedure for application:&nbsp;</b></div><div><b><br></b></div><div>Duly filled and signed physical applications to be submitted to EEPC INDIA <u><b>within 45 days</b></u> from the</div><div>date of receipt of the product test certificate / date of the final invoice.</div><div>The list of documents to be provided by the claimant is given in the MAI Scheme.</div><div><br></div><div><b>For details of coverage, products, funding, etc. as given in the MAI Scheme and also the list of</b></div><div><b>documents to be provided by the claimant, please use: </b><a href=\"https://eepcindia.com/mai/\" target=\"_blank\">https://eepcindia.com/mai/</a></div><div><b><br></b></div><div>Additional points to take note of regarding submission:</div><ul><li>Proof of Payments – Bank Statements / Remittance Advices</li><li>An original Declaration Certificate by Chartered Accountants pertaining to expenditure incurred and taxes paid to the Government</li><li>Statement of Past 3-5 years of export turnover</li><li>A note of Justification of the requirements of Tests / Certifications undertaken for exports</li><li>All document pages must be duly signed and stamped.</li></ul><div>For detailed guidelines and application procedure, contact:</div><div><br></div><div>Mayank Krishna</div><div>Sr Assistant Director</div><div>M: +91 8826211228</div><div>E:mkrishna@eepcindia.net</div>\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.eepcindia.org/api/update-mai-assistance",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"update-mai-assistance"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sexual Harassment",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.eepcindia.org/api/sexual-harassment",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"sexual-harassment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Sexual Harassment",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"sexual_harassment\":\"Sexual Harassment Updated\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.eepcindia.org/api/update-sexual-harassment",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"update-sexual-harassment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Certificate of Origin",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"certificate_of_origin\":\"Certificate of Origin Updated\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.eepcindia.org/api/update-certificate-of-origin",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"update-certificate-of-origin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EXIM Bank Loc",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.eepcindia.org/api/exim-bank-loc",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"exim-bank-loc"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update EXIM Bank Loc",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"exim_bank_loc\":\"EXIM Bank Loc Updated\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.eepcindia.org/api/update-exim-bank-loc",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"update-exim-bank-loc"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Customs Exchange Rate",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.eepcindia.org/api/customs-exchange-rate",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"customs-exchange-rate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Customs Exchange Rate",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"customs_exchange_rate\":\"Customs Exchange Rate Updated\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.eepcindia.org/api/update-customs-exchange-rate",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"update-customs-exchange-rate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Trade Associations",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.eepcindia.org/api/trade-associations",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"trade-associations"
+					],
+					"query": [
+						{
+							"key": "limit",
+							"value": "2",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Logistics",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.eepcindia.org/api/logistics",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"logistics"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Logistics",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"logistics\":\"Logistics Updated\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.eepcindia.org/api/update-logistics",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"update-logistics"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EEPC India Conference Hall",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.eepcindia.org/api/eepc-india-conference-hall",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"eepc-india-conference-hall"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update EEPC India Conference Hall",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"eepc_india_conference_hall\":\"EEPC India Conference Hall Updated\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.eepcindia.org/api/update-eepc-india-conference-hall",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"update-eepc-india-conference-hall"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EEPC India Conference Hall Image",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.eepcindia.org/api/all-conference-hall-image",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"all-conference-hall-image"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Useful Web Links",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.eepcindia.org/api/useful-web-links",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"useful-web-links"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Useful Web Links",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"useful_web_links\":\"Useful Web Links Update\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.eepcindia.org/api/update-useful-web-links",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"update-useful-web-links"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Publications with limit",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.eepcindia.org/api/publications",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"publications"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Strategy Paper",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.eepcindia.org/api/strategy-paper",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"strategy-paper"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Strategy Paper",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"strategy_paper\":\"Strategy Paper Updated\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.eepcindia.org/api/update-strategy-paper",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"update-strategy-paper"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Preventing Sexual Harassment",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.eepcindia.org/api/preventing-sexual-harassment",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"preventing-sexual-harassment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Preventing Sexual Harassment",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"preventing_sexual_harassment\":\"Preventing Sexual Harassment Updated\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.eepcindia.org/api/update-preventing-sexual-harassment",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"update-preventing-sexual-harassment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Annual Report",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.eepcindia.org/api/annual-report",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"annual-report"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "INDEE Publications",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.eepcindia.org/api/events/indee-exhibition",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"events",
+						"indee-exhibition"
+					],
+					"query": [
+						{
+							"key": "limit",
+							"value": "2000",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Events IESS",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.eepcindia.org/api/events/iess",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"events",
+						"iess"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Events IESS",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"iess\":\"IESS Updated Successfully\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.eepcindia.org/api/events/update-iess",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"events",
+						"update-iess"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Previous IESS",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.eepcindia.org/api/events/previous-iess?limit=3",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"events",
+						"previous-iess"
+					],
+					"query": [
+						{
+							"key": "limit",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Award Presentation",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.eepcindia.org/backend/api/events/award-presentation",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"backend",
+						"api",
+						"events",
+						"award-presentation"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Award Presentation",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"award_presentation\":\"Award Presentation Updated\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.eepcindia.org/api/events/update-award-presentation",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"events",
+						"update-award-presentation"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Past Award Presentations",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.eepcindia.org/api/events/past-award-presentations",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"events",
+						"past-award-presentations"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Past Award Presentations Details",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.eepcindia.org/backend/api/events/past-award-presentations/52nd-and-53rd-eepc-india-national-awards",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"backend",
+						"api",
+						"events",
+						"past-award-presentations",
+						"52nd-and-53rd-eepc-india-national-awards"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Other Events",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.eepcindia.org/backend/api/events/other-events",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"backend",
+						"api",
+						"events",
+						"other-events"
+					],
+					"query": [
+						{
+							"key": "limit",
+							"value": "2",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Activities-and-services",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.eepcindia.org/api/activities-and-services",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"activities-and-services"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "All Album",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.eepcindia.org/api/all-album",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"all-album"
+					],
+					"query": [
+						{
+							"key": "limit",
+							"value": "2",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Album or Photo gallery details",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.eepcindia.org/api/all-album/bharat-mobility-global-expo",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"all-album",
+						"bharat-mobility-global-expo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Image List/View/Edit ",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.eepcindia.org/api/image",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"image"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Image",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Test Image",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/C:/Users/user/Pictures/album.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://www.eepcindia.org/api/add-image",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"add-image"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Image",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://www.eepcindia.org/api/delete-image/105",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"delete-image",
+						"105"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "incoterms",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.eepcindia.org/api/incoterms",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"incoterms"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://www.eepcindia.org/api/product-panel",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.eepcindia.org/api/product-panel",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"product-panel"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "india-a-snapshot",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.eepcindia.org/api/india-a-snapshot",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"india-a-snapshot"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "india-suppliers",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var template = `\r",
+							"<style type=\"text/css\">\r",
+							"    .tftable {font-size:14px;color:#333333;width:100%;border-width: 1px;border-color: #87ceeb;border-collapse: collapse;}\r",
+							"    .tftable th {font-size:18px;background-color:#87ceeb;border-width: 1px;padding: 8px;border-style: solid;border-color: #87ceeb;text-align:left;}\r",
+							"    .tftable tr {background-color:#ffffff;}\r",
+							"    .tftable td {font-size:14px;border-width: 1px;padding: 8px;border-style: solid;border-color: #87ceeb;}\r",
+							"    .tftable tr:hover {background-color:#e0ffff;}\r",
+							"</style>\r",
+							"\r",
+							"<table class=\"tftable\" border=\"1\">\r",
+							"    <tr>\r",
+							"        <th>India Suppliers</th>\r",
+							"    </tr>\r",
+							"    \r",
+							"    {{#each response.data.india_suppliers}}\r",
+							"        <tr>\r",
+							"            <td>{{this}}</td>\r",
+							"        </tr>\r",
+							"    {{/each}}\r",
+							"</table>\r",
+							"`;\r",
+							"\r",
+							"function constructVisualizerPayload() {\r",
+							"    var res = pm.response.json();\r",
+							"    return { response: res };\r",
+							"}\r",
+							"\r",
+							"pm.visualizer.set(template, constructVisualizerPayload());"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.eepcindia.org/backend/api/india-suppliers",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"backend",
+						"api",
+						"india-suppliers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "exporters",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.eepcindia.org/api/exporters",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"exporters"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "File List",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.eepcindia.org/api/file",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"file"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add File",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "test file",
+							"type": "text"
+						},
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/user/Pictures/album.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://www.eepcindia.org/api/add-file",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"add-file"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete File",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://www.eepcindia.org/api/delete-file/424",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"delete-file",
+						"424"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Validate Token",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzgzODc4OTYsIm5iZiI6MTczODM4Nzg5NiwiZXhwIjoxNzM4NDAyMjk2LCJkYXRhIjp7ImVtcF9jb2RlIjoiMDMzOSIsImVtcF9uYW1lIjoiRGViYXNoaXMgRGFzIiwiZW1wX2VtYWlsIjoiZGRhc0BlZXBjaW5kaWEubmV0In19.WRHiZ_b-0gPMDUXJew4fVFkMmU7xEce9P5zFE6lhbfQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.eepcindia.org/api/validate-token",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"validate-token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "committee-of-administration",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.eepcindia.org/api/committee-of-administration",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"committee-of-administration"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://www.eepcindia.org/api/working-committee-election",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.eepcindia.org/api/working-committee-election",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"working-committee-election"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://www.eepcindia.org/api/deputy-regional-chairmen",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.eepcindia.org/api/deputy-regional-chairmen",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"deputy-regional-chairmen"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "becoming-a-member",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.eepcindia.org/api/becoming-a-member",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"becoming-a-member"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "working-committee-election",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.eepcindia.org/api/working-committee-election",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"working-committee-election"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Trade Associations",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://www.eepcindia.org/api/delete-trade-associations/184",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"delete-trade-associations",
+						"184"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Trade Associations",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Test Trade22222\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.eepcindia.org/api/update-trade-associations/184",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"update-trade-associations",
+						"184"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit Trade Associations",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.eepcindia.org/api/trade-associations",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"trade-associations"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Trade Associations",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Test Trade\",\r\n    \"details\":\"Test Details\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.eepcindia.org/api/add-trade-associations",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"add-trade-associations"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "World Customs",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.eepcindia.org/api/world-customs",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"world-customs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update World Customs",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"world_customs\":\"World Customs Updated\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.eepcindia.org/api/update-world-customs",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"update-world-customs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Visa",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.eepcindia.org/api/visa",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"visa"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Visa",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"visa\":\"Visa Updated\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.eepcindia.org/api/update-visa",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"update-visa"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "home-banner",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.eepcindia.org/backend/api/home-banner",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"backend",
+						"api",
+						"home-banner"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "All Banner",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.eepcindia.org/api/all-banner",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"all-banner"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Banner",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/C:/Users/user/Pictures/album.jpg"
+						},
+						{
+							"key": "title",
+							"value": "test home banner",
+							"type": "text"
+						},
+						{
+							"key": "link",
+							"value": "https://www.eepcindia.org/api/add-banner",
+							"type": "text"
+						},
+						{
+							"key": "is_home",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://www.eepcindia.org/api/update-banner/2",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"update-banner",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Banner",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/C:/Users/user/Downloads/1.jpg"
+						},
+						{
+							"key": "title",
+							"value": "Hon'ble Prime Minister of India, Shri Narendra Modi; Shri Piyush Goyal, Hon'ble Union Minister of Commerce and Industry, Govt. of India; Shri H D Kumaraswamy, Hon'ble Union Minister of Heavy Industries, Govt. of India; Shri Jitin Prasada, Hon'ble Union Minister of State for Commerce and Industry, Govt. of India; Shri Pankaj Chadha, Chairman, EEPC India along with other stakeholders of Bharat Mobility Global Expo 2025.",
+							"type": "text"
+						},
+						{
+							"key": "is_home",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://www.eepcindia.org/api/add-banner",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"add-banner"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit/View all Banner",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.eepcindia.org/api/all-banner/1",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"all-banner",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Conference Hall Image",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "title",
+							"value": "Test title",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/C:/Users/user/Pictures/album.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://www.eepcindia.org/api/add-conference-hall-image",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"add-conference-hall-image"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Conference Hall Image",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://www.eepcindia.org/api/delete-conference-hall-image/11",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"delete-conference-hall-image",
+						"11"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "All Past Events",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://eepcindia.org/api/all-past-events",
+					"protocol": "https",
+					"host": [
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"all-past-events"
+					],
+					"query": [
+						{
+							"key": "limit",
+							"value": "10",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "iess",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.eepcindia.org/api/events/iess",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"events",
+						"iess"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Event Indee Exibition",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.eepcindia.org/api/events/indee-exhibitions-text",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"events",
+						"indee-exhibitions-text"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Previous IESS",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.eepcindia.org/api/events/previous-iess",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"events",
+						"previous-iess"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Album Category Wise",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.eepcindia.org/api/album-category-wise/indee?limit=4",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"album-category-wise",
+						"indee"
+					],
+					"query": [
+						{
+							"key": "limit",
+							"value": "4"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Particular Album Image ",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.eepcindia.org/api/album-image/A150968793038",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"album-image",
+						"A150968793038"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Events Indee Exhibitions",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"indee_exhibitions\":\"Event Indee Exhibitions Updated\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.eepcindia.org/api/events/update-indee-exhibitions",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"events",
+						"update-indee-exhibitions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Events Indee Exhibition",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.eepcindia.org/api/events/indee-exhibition",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"events",
+						"indee-exhibition"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "How to Export",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.eepcindia.org/api/how-to-export",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"how-to-export"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update How to Export",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"how_to_export\":\"How to Export Updated\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.eepcindia.org/api/update-how-to-export",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"update-how-to-export"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "export-benefits",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.eepcindia.org/api/export-benefits",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"export-benefits"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://eepcindia.org/api/get-in-touch-submit",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://eepcindia.org/api/get-in-touch-submit",
+					"protocol": "https",
+					"host": [
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"get-in-touch-submit"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://www.eepcindia.org/api/album-category-wise/eastern-region-chapters",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.eepcindia.org/api/album-category-wise/eastern-region-chapters",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"album-category-wise",
+						"eastern-region-chapters"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://www.eepcindia.org/1733227541.JPG",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.eepcindia.org/1733227541.JPG",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"1733227541.JPG"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Terms of Use",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.eepcindia.org/api/terms-of-use",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"terms-of-use"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Terms of Use ",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"terms_of_use\":\"Terms_of Use updated\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.eepcindia.org/api/update-terms-of-use",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"update-terms-of-use"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Privacy Policy",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.eepcindia.org/api/privacy-policy",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"privacy-policy"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Privacy Policy",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"privacy_policy\":\"Privacy Policy Updated\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.eepcindia.org/api/update-privacy-policy",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"update-privacy-policy"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-in-touch-submit",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Test User\",\r\n    \"organization\":\"Test Organization\",\r\n    \"email\":\"test@gmail.com\",\r\n    \"phone\":\"9874563221\",\r\n    \"subject\":\"Test subject\"\r\n}"
+				},
+				"url": {
+					"raw": "https://eepcindia.org/api/get-in-touch-submit",
+					"protocol": "https",
+					"host": [
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"get-in-touch-submit"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Disclaimer",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.eepcindia.org/api/disclaimer",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"disclaimer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Disclaimer",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"disclaimer\":\"Disclaimer Update\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.eepcindia.org/api/update-disclaimer",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"update-disclaimer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Employee Profile",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.eepcindia.org/backend/api/employee/employee-profile/0339",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"backend",
+						"api",
+						"employee",
+						"employee-profile",
+						"0339"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "My Colleagues",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "https://www.eepcindia.org/backend/api/employee/my-colleagues",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"backend",
+						"api",
+						"employee",
+						"my-colleagues"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Mou",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.eepcindia.org/api/mous",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"mous"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Employee Forgot Password",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"emp_code\":\"0339\",\r\n    \"old_password\":\"3333\",\r\n    \"new_password\":\"0339\",\r\n    \"confirm_password\":\"0339\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.eepcindia.org/api/employee/forgot-password",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"employee",
+						"forgot-password"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Employee Update Profile",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/user/Pictures/album1.jpg"
+						},
+						{
+							"key": "passport_no",
+							"value": "P000112345",
+							"type": "text"
+						},
+						{
+							"key": "emp_code",
+							"value": "0339",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://www.eepcindia.org/api/employee/update-profile",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"employee",
+						"update-profile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Employee Profile Image",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "emp_code",
+							"value": "0339",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/C:/Users/user/Downloads/0339.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://www.eepcindia.org/api/employee/update-profile-image",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"employee",
+						"update-profile-image"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Employee Birthday Wished",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"emp_from\":\"0339\",\r\n    \"message\":\"Happy Birthday\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.eepcindia.org/api/employee/birthday-wish/0034",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"employee",
+						"birthday-wish",
+						"0034"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Infobulletin List",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://info.eepcindia.org/api/infobulletin",
+					"protocol": "https",
+					"host": [
+						"info",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"infobulletin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ie2 Archive List",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://eepcindia.org/backend/api/ie2-archive-list",
+					"protocol": "https",
+					"host": [
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"backend",
+						"api",
+						"ie2-archive-list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "export-import-monitor",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://eepcindia.org/api/export-import-monitor",
+					"protocol": "https",
+					"host": [
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"api",
+						"export-import-monitor"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "metal-price-monitor-archive-list",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://eepcindia.org/backend/api/metal-price-monitor-archive-list",
+					"protocol": "https",
+					"host": [
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"backend",
+						"api",
+						"metal-price-monitor-archive-list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://eepcvirtualexpo.com/webservices/get_participation_details",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "mem_id",
+							"value": "M37226",
+							"type": "text"
+						},
+						{
+							"key": "mem_id",
+							"value": "M31006",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "https://eepcvirtualexpo.com/webservices/get_participation_details",
+					"protocol": "https",
+					"host": [
+						"eepcvirtualexpo",
+						"com"
+					],
+					"path": [
+						"webservices",
+						"get_participation_details"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Holiday List",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"emp_office\": \"SRO, BENGALURU\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.eepcindia.org/backend/api/holiday-list",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"backend",
+						"api",
+						"holiday-list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Employee Holiday",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "holiday_name",
+							"value": "Martyrdom Day of Sri Guru Teg Bahadur Ji",
+							"type": "text"
+						},
+						{
+							"key": "day",
+							"value": "Tuesday",
+							"type": "text"
+						},
+						{
+							"key": "holiday_date",
+							"value": "2025-11-25",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/C:/Users/user/Downloads/Martyrdom Day of Sri Guru Teg Bahadur Ji.jpg"
+						},
+						{
+							"key": "zone_ids",
+							"value": "9",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://www.eepcindia.org/backend/api/add-holiday",
+					"protocol": "https",
+					"host": [
+						"www",
+						"eepcindia",
+						"org"
+					],
+					"path": [
+						"backend",
+						"api",
+						"add-holiday"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://rcmc.eepcindia.com/webservices/get_panel_list",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://rcmc.eepcindia.com/webservices/get_panel_list",
+					"protocol": "https",
+					"host": [
+						"rcmc",
+						"eepcindia",
+						"com"
+					],
+					"path": [
+						"webservices",
+						"get_panel_list"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

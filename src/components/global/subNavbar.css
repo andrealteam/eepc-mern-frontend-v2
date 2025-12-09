@@ -1,0 +1,21 @@
+.page-group {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.page-group a {
+  display: block;
+  background: transparent;
+  padding: 8px 25px;
+  border-radius: 30px;
+  color: #373737;
+  font-weight: 700;
+  border: 1px solid #373737;
+}
+
+.page-group a.active-page {
+  background: #373737;
+  color: #fff;
+}

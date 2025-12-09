@@ -1,2 +1,1 @@
-# eepc-mern-frontend-v2
- 
+# EEPC Frontend MERN

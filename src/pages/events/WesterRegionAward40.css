@@ -1,0 +1,22 @@
+table.awards-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+}
+
+table.awards-table th,
+table.awards-table td {
+  border: 1px solid #ccc;
+  padding: 8px 12px;
+  vertical-align: top;
+}
+
+table.awards-table th {
+  background-color: #f5f5f5;
+  font-weight: bold;
+}
+
+table.awards-table td[colspan] {
+  background-color: #fafafa;
+  font-style: italic;
+}

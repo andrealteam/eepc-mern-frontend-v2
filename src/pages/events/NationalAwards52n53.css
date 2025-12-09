@@ -1,0 +1,352 @@
+/* General Styles */
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+/* Fix for .awardSection */
+.awardSection {
+  /* You can apply specific styles for awardSection here if needed */
+}
+
+.awardSection .pf {
+  position: fixed;
+  background: white;
+  z-index: 9999;
+}
+
+.awardSection .paperOverlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-repeat: no-repeat;
+  background-image: url("../images/bck.png");
+  mix-blend-mode: multiply;
+  pointer-events: none;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+.awardSection h2 {
+  font-weight: bold;
+  font-size: 1.5em;
+  color: #888888;
+}
+
+.awardSection .bold-text {
+  font-weight: bold;
+}
+
+.awardSection .bg-blue {
+  background: #1a83c6 !important;
+}
+
+.awardSection .col-white {
+  color: white !important;
+}
+
+.awardSection .banner {
+  overflow: hidden;
+}
+
+.awardSection .banner img {
+  object-fit: cover;
+}
+
+.awardSection .sec-pad {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.awardSection .fancy,
+.awardSection .fancy-w {
+  margin: 50px auto;
+  text-align: center;
+}
+
+.awardSection .fancy span,
+.awardSection .fancy-w span {
+  display: inline-block;
+  position: relative;
+}
+
+.awardSection .fancy span:before,
+.awardSection .fancy span:after {
+  content: "";
+  position: absolute;
+  height: 5px;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+  top: 20px;
+  width: 20%;
+}
+
+.awardSection .fancy-w span {
+  color: white;
+}
+
+.awardSection .fancy-w span:before,
+.awardSection .fancy-w span:after {
+  content: "";
+  position: absolute;
+  height: 5px;
+  border-bottom: 1px solid white;
+  border-top: 1px solid white;
+  top: 20px;
+  width: 20%;
+}
+
+.awardSection .fancy span:before,
+.awardSection .fancy-w span:before {
+  right: 100%;
+  margin-right: 15px;
+}
+
+.awardSection .fancy span:after,
+.awardSection .fancy-w span:after {
+  left: 100%;
+  margin-left: 15px;
+}
+
+/* Accordion Button Styles */
+.awardSection .accordion-button {
+  font-weight: bold;
+  font-size: 1.2rem;
+  border: 0.5px solid #94b9f7 !important;
+}
+
+.awardSection .accordion-button:focus {
+  box-shadow: none !important;
+}
+
+.awardSection .accordion-button:not(.collapsed) {
+  background: linear-gradient(
+    90deg,
+    #d7ac6b 0%,
+    #ffffc2 13.54%,
+    #f4d187 26.04%,
+    #f7d184 44.79%,
+    #e9c17a 58.33%,
+    #fff2b3 73.96%,
+    #d7ac6b 85.94%,
+    #966433 100%
+  );
+  border: none;
+}
+
+.awardSection .accordion-button:not(.collapsed).btn-4:after {
+  display: none;
+}
+
+/* Color Classes */
+.awardSection .color-1 {
+  box-shadow: inset 0 -3.25em 0 0 var(--hover);
+  background-color: #cfe2fe;
+}
+
+.awardSection .color-2 {
+  box-shadow: inset 0 -3.25em 0 0 var(--hover);
+  background-color: #ffffff;
+  background-image: linear-gradient(315deg, #d7e1ec 0%, #ffffff 74%);
+}
+
+.awardSection .color-3 {
+  box-shadow: inset 0 -3.25em 0 0 var(--hover);
+  background-color: #045de9;
+  background-image: linear-gradient(315deg, #045de9 0%, #09c6f9 74%);
+}
+
+.awardSection .color-4 {
+  box-shadow: inset 0 -3.25em 0 0 var(--hover);
+  background-color: #ffffff;
+  background-image: linear-gradient(315deg, #d7e1ec 0%, #ffffff 74%);
+}
+
+.awardSection .color-5 {
+  box-shadow: inset 0 -3.25em 0 0 var(--hover);
+  background-color: #045de9;
+  background-image: linear-gradient(315deg, #045de9 0%, #09c6f9 74%);
+}
+
+.awardSection .color-6 {
+  box-shadow: inset 0 -3.25em 0 0 var(--hover);
+  background-color: #ffffff;
+  background-image: linear-gradient(315deg, #d7e1ec 0%, #ffffff 74%);
+}
+
+.awardSection .color-7 {
+  box-shadow: inset 0 -3.25em 0 0 var(--hover);
+  background-color: #045de9;
+  background-image: linear-gradient(315deg, #045de9 0%, #09c6f9 74%);
+}
+
+/* Button Styles */
+.awardSection .btn-4,
+.awardSection .btn-4-a {
+  border: 1px solid;
+  overflow: hidden;
+  position: relative;
+}
+
+.awardSection .btn-4 span,
+.awardSection .btn-4-a span {
+  z-index: 20;
+}
+
+.awardSection .btn-4:after {
+  background: #fff;
+  content: "";
+  height: 250px;
+  left: -75px;
+  opacity: 0.2;
+  position: absolute;
+  top: -150px;
+  transform: rotate(35deg);
+  transition: all 4000ms cubic-bezier(0.19, 1, 0.22, 1);
+  width: 150px;
+  z-index: -10;
+}
+
+.awardSection .btn-4:hover:after {
+  left: 120%;
+  transition: all 4000ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.awardSection .btn-4-a:after {
+  background: #00e0f8;
+  content: "";
+  height: 250px;
+  left: -75px;
+  opacity: 0.2;
+  position: absolute;
+  top: -150px;
+  transform: rotate(35deg);
+  transition: all 4000ms cubic-bezier(0.19, 1, 0.22, 1);
+  width: 150px;
+  z-index: -10;
+}
+
+.awardSection .btn-4-a:hover:after {
+  left: 120%;
+  transition: all 4000ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+/* Swiper Styles */
+.awardSection .swiper {
+  height: 400px;
+}
+
+.awardSection .swiper .swiper-wrapper {
+  align-items: center;
+}
+
+.awardSection .swiper .swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  transition: 0.2s;
+}
+
+.awardSection .swiper .prev,
+.awardSection .swiper .next {
+  cursor: pointer;
+  z-index: 100;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0.8;
+  transition: 0.2s;
+}
+
+.awardSection .swiper .prev:hover,
+.awardSection .swiper .next:hover {
+  opacity: 1;
+}
+
+.awardSection .swiper .prev svg,
+.awardSection .swiper .next svg {
+  width: 50px;
+  height: 50px;
+  background: #000;
+  padding: 10px;
+}
+
+.awardSection .swiper .prev svg path,
+.awardSection .swiper .next svg path {
+  fill: #fff;
+}
+
+.awardSection .swiper .prev {
+  left: 25px;
+}
+
+.awardSection .swiper .next {
+  right: 25px;
+}
+
+.awardSection .swiper .pagination {
+  margin-left: 8px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+  z-index: 100;
+}
+
+.awardSection .swiper .pagination span {
+  font-size: 0;
+  opacity: 1;
+  margin: 0px 6px !important;
+  border: 1px solid #fff;
+}
+
+.awardSection .swiper-slide .card-body {
+  width: 250px;
+  height: 250px;
+  overflow: hidden;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.awardSection .swiper-slide .card .img {
+  object-fit: cover;
+  margin: auto;
+}
+
+/* More Button Styles */
+.awardSection .more-btn-export {
+  color: #fff;
+  height: 50px;
+  margin: -8px auto 0;
+  font-size: 14px;
+  font-weight: 700;
+  background-color: #1a83c6;
+  position: relative;
+  display: table;
+  text-align: center;
+  padding: 14px;
+  text-transform: uppercase;
+}
+
+/* Media Queries */
+@media screen and (max-width: 836px) {
+  .awardSection .fancy span:before,
+  .awardSection .fancy-w span:before,
+  .awardSection .fancy span:after,
+  .awardSection .fancy-w span:after {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 836px) {
+  .awardSection .swiper-slide .card-body {
+    width: auto;
+  }
+}

@@ -1,0 +1,188 @@
+/* ---------------------------------------------------- */
+/* MODAL BASE CSS */
+/* ---------------------------------------------------- */
+
+.custom-overlay {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0,0,0,0.45);
+  z-index: 1200;
+}
+
+.custom-modal {
+  width: 60%;
+  max-width: 900px;
+  height: 78%;
+  background: #fff;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.3);
+  animation: fadeUp 0.25s ease;
+}
+
+.custom-modal-header {
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #09367a !important;
+  color: #ffffff !important;
+}
+
+.custom-modal-body {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  line-height: 1.6;
+}
+
+.custom-modal-footer {
+  padding: 15px 20px;
+  border-top: 1px solid #e5e5e5;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* ---------------------------------------------------- */
+/* TABLE BASE RESPONSIVE */
+/* ---------------------------------------------------- */
+
+.full-width-right {
+  width: 130% !important;
+  margin: 0 !important;
+  overflow-x: hidden !important;
+}
+
+.full-width-right table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.full-width-right th,
+.full-width-right td {
+  padding: 10px;
+  font-size: 15px;
+  word-wrap: break-word;
+  white-space: normal !important;
+}
+
+/* ---------------------------------------------------- */
+/* 1400px - 1600px */
+/* ---------------------------------------------------- */
+@media (min-width: 1400px) and (max-width: 1600px) {
+  .full-width-right {
+    width: 100% !important;
+  }
+  .full-width-right table {
+    table-layout: fixed;
+  }
+  .full-width-right th,
+  .full-width-right td {
+    font-size: 15px;
+    padding: 8px 10px;
+  }
+}
+
+/* ---------------------------------------------------- */
+/* 1200px - 1399px */
+/* ---------------------------------------------------- */
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .full-width-right {
+    width: 100% !important;
+  }
+  .full-width-right th,
+  .full-width-right td {
+    font-size: 14.5px;
+  }
+}
+
+/* ---------------------------------------------------- */
+/* 992px - 1199px */
+/* ---------------------------------------------------- */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .full-width-right th,
+  .full-width-right td {
+    font-size: 14px;
+  }
+}
+
+/* ---------------------------------------------------- */
+/* 768px - 991px */
+/* ---------------------------------------------------- */
+@media (min-width: 768px) and (max-width: 991px) {
+  .full-width-right th,
+  .full-width-right td {
+    font-size: 13px;
+    padding: 8px;
+  }
+}
+
+/* ---------------------------------------------------- */
+/* ≤ 600px — stronger mobile formatting */
+/* ---------------------------------------------------- */
+@media (max-width: 600px) {
+  .full-width-right table {
+    table-layout: fixed !important;
+    width: 100% !important;
+  }
+
+  .full-width-right th,
+  .full-width-right td {
+    display: block;
+    padding: 8px;
+    font-size: 13px;
+    width: 100% !important;
+    white-space: normal !important;
+  }
+}
+
+/* ---------------------------------------------------- */
+/* ≤ 400px — small mobile */
+/* ---------------------------------------------------- */
+@media (max-width: 400px) {
+  .full-width-right th,
+  .full-width-right td {
+    font-size: 12px;
+    padding: 6px;
+  }
+
+  .custom-modal {
+    width: 95% !important;
+  }
+}
+
+/* ---------------------------------------------------- */
+/* ≤ 375px — extra small devices (iPhone SE, Mini) */
+/* ---------------------------------------------------- */
+@media (max-width: 375px) {
+  .full-width-right th,
+  .full-width-right td {
+    font-size: 11px;
+    padding: 5px;
+    line-height: 1.3;
+  }
+
+  .custom-modal {
+    width: 95% !important;
+    border-radius: 10px;
+  }
+
+  .custom-modal-header {
+    padding: 10px 12px;
+    font-size: 14px;
+  }
+}
+
+/* ---------------------------------------------------- */
+/* Animation */
+/* ---------------------------------------------------- */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px) scale(0.98); }
+  to   { opacity: 1; transform: translateY(0) scale(1); }
+}

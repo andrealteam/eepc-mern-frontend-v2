@@ -1,0 +1,111 @@
+/* Sidebar sticky positioning */
+.sidebar {
+  position: sticky;
+  top: 70px;
+}
+
+/* Back Button Styling */
+.back-btn a {
+  color: #fff;
+  padding: 15px 110px;
+  background: #09367a;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 15px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.back-btn a:hover {
+  background: #bad8e5;
+  color: #09367a;
+}
+
+/* Logout Button Styling */
+/* Logout Button Styling */
+.logout-btn button {
+  color: #fff;
+  padding: 15px 110px;
+  background: #ff3f3f;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 15px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.logout-btn button:hover {
+  background: #ea3232;
+  color: #fff;
+}
+
+/* Page Group Container */
+.page-group {
+  color: #fff;
+  padding: 26px;
+  background: #09367a;
+  border-radius: 10px;
+  height: 700px;
+  overflow-y: scroll;
+}
+
+/* Individual Menu Item */
+.page-group a {
+  color: #fff;
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+  border-radius: 8px;
+  position: relative;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+/* Arrow Icons */
+.page-group a::before,
+.page-group a::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  margin-top: -1px;
+  height: 2px;
+  width: 10px;
+  background: #fff;
+  right: 3px;
+  transform-origin: 9px 50%;
+  backface-visibility: hidden;
+}
+
+.page-group a::before {
+  transform: rotate(45deg);
+}
+
+.page-group a::after {
+  transform: rotate(-45deg);
+}
+
+/* Active and Hover States */
+.page-group a.active-page,
+.page-group a:hover {
+  background: #bad8e5;
+  color: #09367a;
+}
+
+.page-group a.active-page::before,
+.page-group a.active-page::after,
+.page-group a:hover::before,
+.page-group a:hover::after {
+  background: #09367a;
+}
+.navbar svg path {
+  fill: #fff;
+}
